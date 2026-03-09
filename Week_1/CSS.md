@@ -125,7 +125,7 @@ nav a {
 
 /* Директно дете (child) — само преките деца */
 ul > li {
-  list-style: square;
+  color: red;
 }
 
 /* Съседен елемент (adjacent sibling) */

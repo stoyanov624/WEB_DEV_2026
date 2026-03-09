@@ -1,0 +1,103 @@
+html {
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+  font-family: Poppins;
+}
+
+.wrapper {
+  width: 1400px;
+  margin: 0 auto;
+}
+
+header {
+  margin-top: 3em;
+  display: flex;
+  justify-content: space-between;
+}
+
+header ul {
+  display: flex;
+  gap: 40px;
+  list-style-type: none;
+}
+
+header ul li {
+  font-size: 2.5rem;
+}
+
+header ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+.active {
+  position: relative;
+}
+
+.active::before {
+  content: '';
+  width: 30%;
+  border-bottom: 2px solid black;
+  bottom: 0;
+  position: absolute;
+}
+
+.left-col {
+  margin-top: 2em;
+  width: 40%;
+}
+
+.heading {
+  font-size: 4.2rem;
+  font-family: 'Playfair Display';
+}
+
+.subheading {
+  margin-top: 2em;
+  font-size: 1.8rem;
+  font-weight: 200;
+}
+
+.cta-buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 4em;
+}
+
+.main-cta {
+  font-size: 1.6rem;
+  padding: 0.5em;
+  text-decoration: none;
+  color: black;
+  background-color: antiquewhite;
+  border-radius: 10px;
+}
+
+.main-cta:hover {
+  background-color: rgb(238, 186, 118);
+}
+
+.secondary-cta {
+  display: flex;
+  align-items: center;
+  font-size: 1.6em;
+  text-decoration: none;
+  color: black;
+}
+
+.secondary-cta svg {
+  margin-left: 0.2em;
+  width: 15px;
+  height: 15px;
+  transition: transform 0.5s;
+}
+
+.secondary-cta:hover svg {
+  transform: translateX(10px);
+}

@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* color: purple; */
+}
+
+/* ---Example basic selectors--- */
+
+/* This is for direct children,
+this is why it does not remove decoration  */
+/* nav > a {
+  text-decoration: none;
+} */
+
+/* This removes decoration succesfully */
+/* nav a {
+  text-decoration: none;
+} */
+
+/* This will color text in li tag, but not inside a tag */
+/* ul > li {
+  color: red;
+} */
+
+/* This will color text in a tag when it is a direct child of a li */
+/* ul > li > a {
+  color: green;
+} */
+
+/* Selects single neighbour element. What will happen if we select p + p? */
+/* ul + p {
+  color: blue;
+}
+
+p {
+  color: black;
+} */
+
+.input_container {
+  margin: 1em;
+  max-width: 700px;
+  background-color: red;
+  border-radius: 5px;
+}
+
+input {
+  margin: 5px;
+  height: 30px;
+  width: 80%;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+
+input:hover {
+  color: red;
+}
+
+input:focus {
+  background-color: wheat;
+  outline: none;
+}
+
+/* li:first-child {
+  color: red;
+}
+
+li:last-child {
+  color: red;
+} */
+
+.required {
+  font-weight: 800;
+}
+
+.required::after {
+  content: ' *';
+}
+
+.required::before {
+  content: ' -';
+}
+
+.card {
+  background-color: red;
+  width: 300px;
+  height: 300px;
+  padding: 10px;
+  border: 2px solid black; /* Рамка */
+  margin: 15px; /* Външно разстояние */
+  border-radius: 8px; /* Заоблени ъгли */
+}
+
+.layout {
+  max-width: 75%;
+  min-width: 760px;
+  margin: 0 auto;
+}
+
+.navigation {
+  width: 100%;
+  height: 100px;
+  font-size: 48px;
+  color: black;
+  position: sticky;
+  z-index: 1;
+  top: 0;
+  background-color: crimson;
+  border-radius: 10px;
+}
+
+/* Orchestrate with float */
+/* .navigation h1 {
+  float: left;
+  margin-left: 0.25em;
+  color: rgb(167, 255, 204);
+}
+
+.nav_links {
+  float: right;
+  list-style: none;
+} */
+
+.navigation h1 {
+  display: inline;
+  position: relative;
+  margin-left: 0.25em;
+  color: rgb(255, 255, 255);
+}
+
+.navigation h1:hover {
+  cursor: pointer;
+  color: rgb(0, 0, 0);
+}
+
+.nav_links {
+  width: 1000px;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  list-style: none;
+}
+
+.nav_links li {
+  display: inline;
+  margin: auto 0.5em;
+}
+
+.nav_links li:hover {
+  cursor: pointer;
+  color: white;
+}
+
+.blog {
+  background-color: red;
+  margin-top: 3em;
+  font-size: 48px;
+}
