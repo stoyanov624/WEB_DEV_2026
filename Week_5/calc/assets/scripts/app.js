@@ -13,8 +13,9 @@ function updateCurrentResult(operation, userInput) {
   } else if (operation === '*') {
     currentResult *= userInput;
   } else if (operation === '/' && userInput) {
-    currentResult *= userInput;
+    currentResult /= userInput;
   }
+  currentResult = Math.round(currentResult * 1000) / 1000;
 }
 
 function handleCalculation(operation) {
