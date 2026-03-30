@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+}
+
+.grandparent {
+  margin: 0 auto;
+  margin-top: 2em;
+  width: 300px;
+  height: 300px;
+  background-color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.parent {
+  width: 200px;
+  height: 200px;
+  background-color: green;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+}
+
+.child {
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.barely-visible {
+  opacity: 30%;
+}
+
+/* #child-two {
+  display: none;
+} */
